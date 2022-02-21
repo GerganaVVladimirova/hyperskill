@@ -51,36 +51,32 @@
             align-items: center;
             font-size: 1.25vw;
             text-align: center;
+            transition:all 1s linear;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
         }
         .front, .back {
             align-items: center;
             display: flex;
-            font-size: 18px;
             height: 100%;
             justify-content: center;
             width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
         }
-        .card {
-            transition: tranform 2s ease;
-            transform-style: preserve-3d;
-            backface-visibility: hidden
-        }
-
         .card:hover {
             transform: rotateY(180deg);
         }
-
-        .front, .back {
-            backface-visibility:hidden;
-            position:absolute;
-        }
-
         .back {
             transform:rotateY(180deg);
             background-color:#004d1a;
             border:1px solid teal;
             color: white;
             border-radius: 30px;
+
+        }
+        .front{
+            backface-visibility:hidden;
         }
     </style>
 </head>
@@ -88,31 +84,29 @@
 <!--<div> <img src="animal_img.jpg" alt="World map animal image" ></div>-->
 <h1 class="h1">Let's see how many facts you know about animals</h1>
 <div class="container">
-    <div class="card item1">
+    <div class="card">
         <div class="front"><p>How long is an elephant pregnant before it gives birth?</p></div>
         <div class="back"><p>22 Months</p></div>
-
     </div>
-    <div class="card item2">
+    <div class="card">
         <div class="front"><p>Which animal is known to spend 90% of its day, sleeping?</p></div>
         <div class="back"><p>Koalas</p></div>
     </div>
-    <div class="card item3">
+    <div class="card">
         <div class="front"><p>How do sea otters keep from drifting apart while they sleep?</p>
         </div>
         <div class="back"><p>They hold hands</p></div>
     </div>
-    <div class="card item4">
+    <div class="card">
         <div class="front"><p>What kind of turtle can’t retract into its shell?</p></div>
         <div class="back"><p>Sea turtle</p></div>
 
     </div>
-    <div class="card item5">
+    <div class="card">
         <div class="front"><p>Why do frogs croak?</p></div>
         <div class="back"><p>To attract a mate</p></div>
-
     </div>
-    <div class="card item6">
+    <div class="card">
         <div class="front"><p>What is the smallest known insect?</p></div>
         <div class="back"><p>Fairyflies</p></div>
 
