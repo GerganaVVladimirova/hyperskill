@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animal trivia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <style>
+
+        body{
+            background-image: url('https://previews.123rf.com/images/ekaterinabaikal/ekaterinabaikal1507/ekaterinabaikal150700282/42465231-cartoon-animal-world-map-for-children-and-kids-animals-from-all-over-the-world-on-white-background-v.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Acme', sans-serif;
+            font-size:1.5vw;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1vw;
+            max-width: 70vw;
+            margin: auto;
+            align-items: center;
+        }
+        .h1{
+            font-size:3vw;
+            background: -webkit-linear-gradient(#000066, teal, #004d1a,#000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align:center;
+        }
+        .container{
+            display:flex;
+            width:35vw;
+            height:70vh;
+            flex-wrap:wrap;
+            flex-direction:row;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        .card{
+            background-color:white;
+            border:1px solid teal;
+            color: #004d1a;
+            width: 11vw;
+            height: 30vh;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.25vw;
+            text-align: center;
+        }
+        .front, .back {
+            align-items: center;
+            display: flex;
+            font-size: 18px;
+            height: 100%;
+            justify-content: center;
+            width: 100%;
+        }
+        .card {
+            transition: tranform 2s ease;
+            transform-style: preserve-3d;
+            backface-visibility: hidden
+        }
+
+        .card:hover {
+            transform: rotateY(180deg);
+        }
+
+        .front, .back {
+            backface-visibility:hidden;
+            position:absolute;
+        }
+
+        .back {
+            transform:rotateY(180deg);
+            background-color:#004d1a;
+            border:1px solid teal;
+            color: white;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+<!--<div> <img src="animal_img.jpg" alt="World map animal image" ></div>-->
+<h1 class="h1">Let's see how many facts you know about animals</h1>
+<div class="container">
+    <div class="card item1">
+        <div class="front"><p>How long is an elephant pregnant before it gives birth?</p></div>
+        <div class="back"><p>22 Months</p></div>
+
+    </div>
+    <div class="card item2">
+        <div class="front"><p>Which animal is known to spend 90% of its day, sleeping?</p></div>
+        <div class="back"><p>Koalas</p></div>
+    </div>
+    <div class="card item3">
+        <div class="front"><p>How do sea otters keep from drifting apart while they sleep?</p>
+        </div>
+        <div class="back"><p>They hold hands</p></div>
+    </div>
+    <div class="card item4">
+        <div class="front"><p>What kind of turtle can’t retract into its shell?</p></div>
+        <div class="back"><p>Sea turtle</p></div>
+
+    </div>
+    <div class="card item5">
+        <div class="front"><p>Why do frogs croak?</p></div>
+        <div class="back"><p>To attract a mate</p></div>
+
+    </div>
+    <div class="card item6">
+        <div class="front"><p>What is the smallest known insect?</p></div>
+        <div class="back"><p>Fairyflies</p></div>
+
+    </div>
+
+</div>
+</body>
+</html>
